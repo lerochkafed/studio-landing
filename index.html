@@ -11,14 +11,14 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <meta name="author" content="STUDIO">
     <meta name="theme-color" content="#111111">
-    <link rel="canonical" href="https://ваш-username.github.io/studio-landing/">
+    <link rel="canonical" href="https://digitalrepair.site/">
 
-    <!-- ═══ Open Graph (соцсети) ═══ -->
+    <!-- ═══ Open Graph ═══ -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="STUDIO — Дизайн и ремонт квартир под ключ">
     <meta property="og:description" content="Инновационный дизайн вашей квартиры. От эконом до премиум. Бесплатный замер и смета.">
-    <meta property="og:image" content="https://ваш-username.github.io/studio-landing/images/hero.jpg">
-    <meta property="og:url" content="https://ваш-username.github.io/studio-landing/">
+    <meta property="og:image" content="https://digitalrepair.site/images/hero.jpg">
+    <meta property="og:url" content="https://digitalrepair.site/">
     <meta property="og:site_name" content="STUDIO">
     <meta property="og:locale" content="ru_RU">
 
@@ -26,24 +26,24 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="STUDIO — Дизайн и ремонт квартир под ключ">
     <meta name="twitter:description" content="Инновационный дизайн вашей квартиры. Бесплатный замер.">
-    <meta name="twitter:image" content="https://ваш-username.github.io/studio-landing/images/hero.jpg">
+    <meta name="twitter:image" content="https://digitalrepair.site/images/hero.jpg">
 
     <!-- ═══ Шрифты ═══ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- ═══ Favicon (можно заменить на свой logo.png) ═══ -->
+    <!-- ═══ Favicon ═══ -->
     <link rel="icon" type="image/png" href="images/logo.png">
 
-    <!-- ═══ JSON-LD: структурированные данные для поисковиков ═══ -->
+    <!-- ═══ JSON-LD ═══ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "STUDIO",
       "description": "Дизайн и ремонт квартир под ключ в Санкт-Петербурге. Эконом, бизнес и премиум-класс.",
-      "url": "https://ваш-username.github.io/studio-landing/",
+      "url": "https://digitalrepair.site/",
       "telephone": "+78123456789",
       "email": "info@studio.ru",
       "address": {
@@ -54,26 +54,11 @@
       },
       "priceRange": "от 3500 ₽/м²",
       "openingHours": "Mo-Su 09:00-21:00",
-      "image": "https://ваш-username.github.io/studio-landing/images/hero.jpg",
+      "image": "https://digitalrepair.site/images/hero.jpg",
       "makesOffer": [
-        {
-          "@type": "Offer",
-          "name": "Ремонт Эконом",
-          "priceCurrency": "RUB",
-          "price": "3500"
-        },
-        {
-          "@type": "Offer",
-          "name": "Ремонт Бизнес",
-          "priceCurrency": "RUB",
-          "price": "6500"
-        },
-        {
-          "@type": "Offer",
-          "name": "Ремонт Премиум",
-          "priceCurrency": "RUB",
-          "price": "12000"
-        }
+        { "@type": "Offer", "name": "Ремонт Эконом",  "priceCurrency": "RUB", "price": "3500" },
+        { "@type": "Offer", "name": "Ремонт Бизнес",  "priceCurrency": "RUB", "price": "6500" },
+        { "@type": "Offer", "name": "Ремонт Премиум", "priceCurrency": "RUB", "price": "12000" }
       ]
     }
     </script>
@@ -100,20 +85,6 @@
             --border-grey: #e0e0e0;
         }
 
-        /* --- Иконки --- */
-        .icon-box {
-            width: 64px;
-            height: 64px;
-            background-color: var(--light-grey);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            color: var(--yellow);
-        }
-        .icon-box svg { width: 30px; height: 30px; fill: currentColor; }
-
         /* --- ШАПКА --- */
         header {
             background-color: var(--black);
@@ -125,72 +96,44 @@
         }
         .nav-flex { display: flex; justify-content: space-between; align-items: center; }
 
-        /* Логотип */
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: var(--yellow);
-            transition: 0.3s;
-        }
+        .logo { display: flex; align-items: center; gap: 12px; color: var(--yellow); }
 
         .logo-mark {
-            width: 42px;
-            height: 42px;
+            width: 42px; height: 42px;
             border: 2px solid var(--yellow);
             border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
+            display: flex; align-items: center; justify-content: center;
+            position: relative; overflow: hidden;
             transition: 0.4s ease;
         }
-
         .logo-mark::before {
             content: '';
-            position: absolute;
-            inset: 0;
+            position: absolute; inset: 0;
             background: var(--yellow);
             transform: translateY(100%);
             transition: transform 0.4s ease;
             z-index: 0;
         }
-
         .logo-mark svg {
-            width: 24px;
-            height: 24px;
+            width: 24px; height: 24px;
             fill: var(--yellow);
-            position: relative;
-            z-index: 1;
+            position: relative; z-index: 1;
             transition: fill 0.4s ease;
         }
-
         .logo:hover .logo-mark::before { transform: translateY(0); }
         .logo:hover .logo-mark svg { fill: var(--black); }
 
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1;
-        }
-
+        .logo-text { display: flex; flex-direction: column; line-height: 1; }
         .logo-text .main {
             font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            font-size: 20px;
-            letter-spacing: 3px;
-            color: var(--yellow);
+            font-weight: 700; font-size: 20px;
+            letter-spacing: 3px; color: var(--yellow);
         }
-
         .logo-text .sub {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 9px;
-            letter-spacing: 4px;
+            font-size: 9px; letter-spacing: 4px;
             color: rgba(255,255,255,0.5);
             text-transform: uppercase;
             margin-top: 3px;
-            font-weight: 400;
         }
 
         .menu { display: flex; gap: 30px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
@@ -199,36 +142,28 @@
         /* --- ГЕРОЙ --- */
         .hero {
             height: 90vh;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('images/hero.jpg');
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero.jpg');
             background-size: cover;
             background-position: center;
             display: flex; align-items: center; justify-content: center;
             text-align: center; color: var(--white);
         }
         .hero-content { max-width: 800px; padding: 0 20px; }
-
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 52px;
-            font-style: italic;
-            margin-bottom: 20px;
-            line-height: 1.1;
+            font-size: 52px; font-style: italic;
+            margin-bottom: 20px; line-height: 1.1;
             color: var(--yellow);
         }
-        .hero h1 span {
-            display: block;
-            font-style: normal;
-            font-weight: 700;
-            color: var(--yellow);
-        }
+        .hero h1 span { display: block; font-style: normal; font-weight: 700; color: var(--yellow); }
         .hero p { font-weight: 300; font-size: 18px; margin-bottom: 30px; }
 
         .btn-hero {
             display: inline-block;
             padding: 15px 40px;
-            background: var(--yellow); color: var(--black); border: none;
-            font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer; transition: 0.3s;
+            background: var(--yellow); color: var(--black);
+            font-size: 14px; font-weight: 700;
+            transition: 0.3s;
         }
         .btn-hero:hover { background: var(--dark-yellow); }
 
@@ -237,30 +172,25 @@
         .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
         .about-image img { width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
 
-        .section-title {
-            font-size: 34px; font-weight: 300; text-transform: uppercase; margin-bottom: 20px; color: var(--black);
-        }
+        .section-title { font-size: 34px; font-weight: 300; text-transform: uppercase; margin-bottom: 20px; color: var(--black); }
         .section-title span { font-weight: 700; }
         .about-text p { color: var(--text-grey); font-size: 15px; margin-bottom: 15px; }
 
         /* --- ЭТАПЫ --- */
-        .stages-section {
-            background-color: var(--black);
-            padding: 80px 0;
-            color: var(--white);
-            width: 100%;
-        }
+        .stages-section { background-color: var(--black); padding: 80px 0; color: var(--white); }
         .stages-section .section-title { color: var(--white); text-align: center; }
 
         .stages-wrapper {
-            display: flex;
-            overflow-x: auto;
+            display: flex; overflow-x: auto;
             scroll-snap-type: x mandatory;
             gap: 20px;
             padding: 25px 0 30px;
             scrollbar-width: thin;
             scrollbar-color: var(--yellow) var(--black);
         }
+        .stages-wrapper::-webkit-scrollbar { height: 8px; }
+        .stages-wrapper::-webkit-scrollbar-thumb { background: var(--yellow); border-radius: 10px; }
+        .stages-wrapper::-webkit-scrollbar-track { background: rgba(255,255,255,0.1); }
 
         .stage-item {
             position: relative;
@@ -278,161 +208,90 @@
             transition: transform 0.35s ease, opacity 0.5s ease, box-shadow 0.35s ease, border-color 0.35s ease, background 0.35s ease;
             opacity: 0.75;
         }
-
         .stage-item::before {
             content: '';
             position: absolute;
-            top: -40px;
-            right: -40px;
-            width: 120px;
-            height: 120px;
+            top: -40px; right: -40px;
+            width: 120px; height: 120px;
             background: radial-gradient(circle, rgba(241,196,15,0.25) 0%, rgba(241,196,15,0) 70%);
             border-radius: 50%;
-            pointer-events: none;
             transition: transform 0.4s ease;
         }
-
-        .stage-item.active {
-            opacity: 1;
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(241,196,15,0.25), 0 5px 15px rgba(0,0,0,0.25);
-        }
-
+        .stage-item.active { opacity: 1; transform: scale(1.05); box-shadow: 0 10px 30px rgba(241,196,15,0.25); }
         .stage-item:hover {
             opacity: 1;
             transform: translateY(-8px) scale(1.06);
             border-color: var(--yellow);
             background: linear-gradient(180deg, #fffdf3 0%, #ffffff 100%);
-            box-shadow: 0 15px 35px rgba(241,196,15,0.35), 0 5px 15px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 35px rgba(241,196,15,0.35);
         }
-
         .stage-item:hover::before { transform: scale(1.4); }
 
         .stage-num {
             font-family: 'Playfair Display', serif;
-            font-style: italic;
-            font-weight: 700;
-            font-size: 72px;
-            line-height: 1;
+            font-style: italic; font-weight: 700;
+            font-size: 72px; line-height: 1;
             color: var(--yellow);
             margin-bottom: 15px;
-            letter-spacing: -2px;
             text-shadow: 0 4px 20px rgba(241,196,15,0.3);
-            transition: color 0.35s ease, text-shadow 0.35s ease, transform 0.35s ease;
         }
-
-        .stage-item:hover .stage-num {
-            color: var(--dark-yellow);
-            text-shadow: 0 6px 25px rgba(241,196,15,0.6);
-            transform: scale(1.08);
-        }
-
         .stage-divider {
-            width: 40px;
-            height: 2px;
+            width: 40px; height: 2px;
             background: var(--yellow);
             margin: 0 auto 15px;
-            transition: width 0.35s ease, background 0.35s ease;
+            transition: width 0.35s ease;
         }
-
         .stage-item.active .stage-divider { width: 70px; }
-        .stage-item:hover .stage-divider { width: 90px; background: var(--dark-yellow); }
+        .stage-item:hover .stage-divider { width: 90px; }
 
         .stage-item h4 {
-            font-size: 15px;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-            letter-spacing: 3px;
+            font-size: 15px; text-transform: uppercase;
+            margin-bottom: 15px; letter-spacing: 3px;
             font-weight: 600;
-            color: var(--black);
-            transition: color 0.35s ease, letter-spacing 0.35s ease;
         }
-
-        .stage-item:hover h4 { color: var(--dark-yellow); letter-spacing: 4px; }
-
-        .stage-item p {
-            font-size: 13px;
-            color: var(--text-grey);
-            line-height: 1.6;
-            transition: color 0.35s ease;
-        }
-
-        .stage-item:hover p { color: #222; }
+        .stage-item p { font-size: 13px; color: var(--text-grey); line-height: 1.6; }
 
         /* --- УСЛУГИ --- */
         .pricing-section { padding: 80px 0; background: var(--light-grey); }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
 
         .price-card {
             background: var(--white);
             border-radius: 16px;
             padding: 20px 25px 35px;
             border: 1px solid var(--border-grey);
-            display: flex;
-            flex-direction: column;
+            display: flex; flex-direction: column;
             transition: 0.3s;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
-            overflow: hidden;
         }
-        .price-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            border-color: var(--yellow);
-        }
+        .price-card:hover { transform: translateY(-5px); border-color: var(--yellow); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
 
-        .price-image {
-            width: 100%;
-            height: 200px;
-            border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 25px;
-        }
-        .price-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.4s ease;
-        }
+        .price-image { width: 100%; height: 200px; border-radius: 12px; overflow: hidden; margin-bottom: 25px; }
+        .price-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
         .price-card:hover .price-image img { transform: scale(1.06); }
 
-        .price-card h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-        }
-        .price-card .price-tag {
-            font-size: 32px; font-weight: 700; color: var(--black); display: block; margin-bottom: 20px;
-        }
+        .price-card h3 { font-size: 24px; margin-bottom: 15px; text-transform: uppercase; }
+        .price-card .price-tag { font-size: 32px; font-weight: 700; display: block; margin-bottom: 20px; }
         .price-card .price-tag span { font-size: 16px; font-weight: 400; color: var(--text-grey); }
 
         .price-card ul { margin-bottom: 30px; flex-grow: 1; }
         .price-card ul li {
-            position: relative; padding-left: 25px; margin-bottom: 12px; font-size: 14px; color: #444;
+            position: relative; padding-left: 25px; margin-bottom: 12px;
+            font-size: 14px; color: #444;
         }
-        .price-card ul li::before {
-            content: '✓'; color: var(--yellow); font-weight: 700; position: absolute; left: 0;
-        }
+        .price-card ul li::before { content: '✓'; color: var(--yellow); font-weight: 700; position: absolute; left: 0; }
 
         .btn-price {
-            background: var(--black); color: var(--white); padding: 14px 0; width: 100%; border: none;
-            font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer; transition: 0.3s;
-            border-radius: 8px;
+            background: var(--black); color: var(--white);
+            padding: 14px 0; width: 100%; border: none;
+            font-family: inherit; font-size: 14px; font-weight: 600;
+            cursor: pointer; border-radius: 8px;
+            transition: 0.3s;
         }
         .btn-price:hover { background: var(--yellow); color: var(--black); }
 
         /* --- КОНТАКТЫ --- */
-        .contact-section {
-            background: var(--black);
-            color: var(--white);
-            padding: 80px 0;
-            width: 100%;
-        }
-        .contact-flex { display: flex; gap: 60px; justify-content: space-between; }
+        .contact-section { background: var(--black); color: var(--white); padding: 80px 0; }
+        .contact-flex { display: flex; gap: 60px; }
 
         .contact-info { flex: 1; }
         .contact-info h2 { margin-bottom: 30px; }
@@ -440,11 +299,8 @@
         .contact-info strong { opacity: 1; color: var(--yellow); }
 
         .contact-photo {
-            width: 100%;
-            max-width: 420px;
-            height: 240px;
-            border-radius: 16px;
-            overflow: hidden;
+            width: 100%; max-width: 420px; height: 240px;
+            border-radius: 16px; overflow: hidden;
             margin-bottom: 30px;
             border: 2px solid var(--yellow);
         }
@@ -453,106 +309,78 @@
         .contact-form { flex: 1.2; }
         .form-group { margin-bottom: 20px; }
         .form-group input, .form-group textarea {
-            width: 100%; padding: 15px; border: none; border-radius: 8px;
-            font-family: inherit; font-size: 14px; background: rgba(255,255,255,0.1); color: var(--white);
+            width: 100%; padding: 15px;
+            border: none; border-radius: 8px;
+            font-family: inherit; font-size: 14px;
+            background: rgba(255,255,255,0.1); color: var(--white);
             outline: none; transition: 0.3s;
         }
         .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(255,255,255,0.5); }
-        .form-group input:focus, .form-group textarea:focus { background: rgba(255,255,255,0.2); border-bottom: 2px solid var(--yellow); }
+        .form-group input:focus, .form-group textarea:focus {
+            background: rgba(255,255,255,0.2);
+            border-bottom: 2px solid var(--yellow);
+        }
         .form-group textarea { resize: vertical; min-height: 100px; }
 
         /* Галочка согласия */
         .form-check {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
+            display: flex; align-items: flex-start; gap: 12px;
             margin-bottom: 22px;
-            cursor: pointer;
-            user-select: none;
-            font-size: 13px;
-            color: rgba(255,255,255,0.7);
+            cursor: pointer; user-select: none;
+            font-size: 13px; color: rgba(255,255,255,0.7);
             line-height: 1.5;
         }
-
-        .form-check input[type="checkbox"] {
-            position: absolute;
-            opacity: 0;
-            pointer-events: none;
-        }
-
+        .form-check input[type="checkbox"] { position: absolute; opacity: 0; pointer-events: none; }
         .form-check .checkmark {
-            flex-shrink: 0;
-            width: 20px;
-            height: 20px;
+            flex-shrink: 0; width: 20px; height: 20px;
             border: 2px solid rgba(255,255,255,0.4);
             border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             transition: 0.25s ease;
             margin-top: 1px;
         }
-
         .form-check .checkmark svg {
-            width: 12px;
-            height: 12px;
-            fill: none;
-            stroke: var(--black);
-            stroke-width: 3;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            opacity: 0;
-            transform: scale(0.5);
+            width: 12px; height: 12px;
+            fill: none; stroke: var(--black); stroke-width: 3;
+            stroke-linecap: round; stroke-linejoin: round;
+            opacity: 0; transform: scale(0.5);
             transition: 0.25s ease;
         }
-
         .form-check:hover .checkmark { border-color: var(--yellow); }
-
         .form-check input[type="checkbox"]:checked + .checkmark {
-            background: var(--yellow);
-            border-color: var(--yellow);
+            background: var(--yellow); border-color: var(--yellow);
         }
-
-        .form-check input[type="checkbox"]:checked + .checkmark svg {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        .form-check a {
-            color: var(--yellow);
-            text-decoration: underline;
-            text-underline-offset: 2px;
-        }
+        .form-check input[type="checkbox"]:checked + .checkmark svg { opacity: 1; transform: scale(1); }
+        .form-check a { color: var(--yellow); text-decoration: underline; text-underline-offset: 2px; }
         .form-check a:hover { color: var(--dark-yellow); }
 
         .btn-submit {
-            width: 100%; padding: 15px; background: var(--yellow); color: var(--black); border: none;
-            font-family: inherit; font-size: 16px; font-weight: 700; cursor: pointer; transition: 0.3s;
-            border-radius: 8px;
+            width: 100%; padding: 15px;
+            background: var(--yellow); color: var(--black);
+            border: none; border-radius: 8px;
+            font-family: inherit; font-size: 16px; font-weight: 700;
+            cursor: pointer; transition: 0.3s;
         }
         .btn-submit:hover { background: var(--dark-yellow); }
+        .btn-submit:disabled { opacity: 0.6; cursor: wait; }
+
+        #formStatus {
+            margin-top: 15px;
+            font-size: 14px;
+            text-align: center;
+            display: none;
+        }
 
         /* --- ФУТЕР --- */
         footer {
             background: #0a0a0a;
             padding: 40px 0 30px;
             text-align: center;
-            color: #777;
-            font-size: 13px;
-            line-height: 1.8;
+            color: #777; font-size: 13px; line-height: 1.8;
         }
         footer a { color: var(--yellow); }
         footer a:hover { color: var(--dark-yellow); text-decoration: underline; }
-        footer .company-info {
-            font-size: 12px;
-            opacity: 0.6;
-            margin-top: 15px;
-        }
-
-        /* --- СКРОЛЛБАР --- */
-        .stages-wrapper::-webkit-scrollbar { height: 8px; }
-        .stages-wrapper::-webkit-scrollbar-thumb { background: var(--yellow); border-radius: 10px; }
-        .stages-wrapper::-webkit-scrollbar-track { background: rgba(255,255,255,0.1); }
+        footer .company-info { font-size: 12px; opacity: 0.6; margin-top: 15px; }
 
         /* --- АДАПТИВНОСТЬ --- */
         @media (max-width: 992px) {
@@ -580,7 +408,7 @@
         <div class="container nav-flex">
             <a href="#" class="logo" aria-label="STUDIO — на главную">
                 <div class="logo-mark">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12 3L2.5 20.5H6L12 8.5L18 20.5H21.5L12 3Z"/>
                         <path d="M9 16H15L12 10.5L9 16Z" opacity="0.85"/>
                     </svg>
@@ -615,7 +443,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="images/about.jpg" alt="Дизайн интерьера квартиры от студии STUDIO">
+                    <img src="images/about.jpg" alt="Дизайн интерьера квартиры">
                 </div>
                 <div class="about-text">
                     <h2 class="section-title">Больше чем просто <br><span>ремонт</span></h2>
@@ -630,7 +458,6 @@
     <section class="stages-section full-width" id="stages">
         <div class="container">
             <h2 class="section-title">Этапы <span style="color: var(--yellow);">работы</span></h2>
-
             <div class="stages-wrapper" id="stageSlider">
                 <div class="stage-item">
                     <div class="stage-num">01</div>
@@ -670,10 +497,7 @@
     <section id="prices" class="pricing-section full-width">
         <div class="container">
             <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">Наши <span>услуги</span></h2>
-
             <div class="pricing-grid">
-
-                <!-- Эконом -->
                 <div class="price-card">
                     <div class="price-image">
                         <img src="images/price-1.jpg" alt="Ремонт квартиры эконом-класса">
@@ -689,7 +513,6 @@
                     <button class="btn-price" type="button">Рассчитать</button>
                 </div>
 
-                <!-- Бизнес -->
                 <div class="price-card">
                     <div class="price-image">
                         <img src="images/price-2.jpg" alt="Ремонт квартиры бизнес-класса">
@@ -705,7 +528,6 @@
                     <button class="btn-price" type="button">Рассчитать</button>
                 </div>
 
-                <!-- Премиум -->
                 <div class="price-card">
                     <div class="price-image">
                         <img src="images/price-3.jpg" alt="Ремонт квартиры премиум-класса">
@@ -720,7 +542,6 @@
                     </ul>
                     <button class="btn-price" type="button">Рассчитать</button>
                 </div>
-
             </div>
         </div>
     </section>
@@ -728,10 +549,9 @@
     <!-- Контакты -->
     <section class="contact-section full-width" id="contacts">
         <div class="container contact-flex">
-
             <div class="contact-info">
                 <div class="contact-photo">
-                    <img src="images/contacts.jpg" alt="Офис студии дизайна STUDIO в Санкт-Петербурге">
+                    <img src="images/contacts.jpg" alt="Офис студии дизайна">
                 </div>
                 <h2 class="section-title" style="color: #fff;">Свяжитесь <br><span style="color: var(--yellow);">с нами</span></h2>
                 <p>Сделаем замер и рассчитаем точную стоимость ремонта <strong>абсолютно бесплатно</strong>.</p>
@@ -742,21 +562,20 @@
             </div>
 
             <div class="contact-form">
-                <form action="#" method="POST" novalidate>
+                <form id="leadForm" novalidate>
                     <div class="form-group">
-                        <label for="name" class="visually-hidden" style="position:absolute;left:-9999px;">Ваше имя</label>
+                        <label for="name" style="position:absolute;left:-9999px;">Ваше имя</label>
                         <input type="text" id="name" name="name" placeholder="Ваше имя" required>
                     </div>
                     <div class="form-group">
-                        <label for="phone" class="visually-hidden" style="position:absolute;left:-9999px;">Ваш телефон</label>
+                        <label for="phone" style="position:absolute;left:-9999px;">Ваш телефон</label>
                         <input type="tel" id="phone" name="phone" placeholder="Ваш телефон" required>
                     </div>
                     <div class="form-group">
-                        <label for="message" class="visually-hidden" style="position:absolute;left:-9999px;">Комментарий</label>
+                        <label for="message" style="position:absolute;left:-9999px;">Комментарий</label>
                         <textarea id="message" name="message" placeholder="Ваш комментарий или вопрос (необязательно)"></textarea>
                     </div>
 
-                    <!-- Галочка согласия -->
                     <label class="form-check">
                         <input type="checkbox" name="agree" required>
                         <span class="checkmark">
@@ -768,9 +587,9 @@
                     </label>
 
                     <button type="submit" class="btn-submit">Отправить заявку</button>
+                    <p id="formStatus"></p>
                 </form>
             </div>
-
         </div>
     </section>
 
@@ -786,8 +605,11 @@
         </div>
     </footer>
 
-    <!-- Скрипт слайдера -->
+    <!-- ═══════════════════════════════════════════════════════════
+         СКРИПТЫ
+    ════════════════════════════════════════════════════════════════ -->
     <script>
+        /* ────────── СЛАЙДЕР ЭТАПОВ ────────── */
         const slider = document.getElementById('stageSlider');
         const stages = document.querySelectorAll('.stage-item');
 
@@ -798,7 +620,6 @@
             stages.forEach(stage => {
                 const stageRect = stage.getBoundingClientRect();
                 const stageCenterX = stageRect.left + stageRect.width / 2;
-
                 if (Math.abs(stageCenterX - centerX) < stageRect.width / 2) {
                     stage.classList.add('active');
                 } else {
@@ -806,10 +627,103 @@
                 }
             });
         }
-
         slider.addEventListener('scroll', updateActiveStage);
         window.addEventListener('load', updateActiveStage);
         window.addEventListener('resize', updateActiveStage);
+    </script>
+
+    <script>
+        /* ══════════════════════════════════════════════════════════
+           📬 НАСТРОЙКИ TELEGRAM-БОТА
+           ──────────────────────────────────────────────────────────
+           1) TG_TOKEN  — токен вашего бота от @BotFather
+           2) TG_CHAT_ID — ваш chat_id (узнать: напишите боту /start,
+                          затем откройте в браузере:
+                          https://api.telegram.org/bot<ТОКЕН>/getUpdates
+                          и найдите "chat":{"id": ...})
+        ══════════════════════════════════════════════════════════ */
+        const TG_TOKEN   = '8791053280:AAGm1AEYcJN75sXtVqdEQqloRDQTJuZ4S7I';
+        const TG_CHAT_ID = '716232442';
+
+        const form   = document.getElementById('leadForm');
+        const status = document.getElementById('formStatus');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const name    = form.name.value.trim();
+            const phone   = form.phone.value.trim();
+            const message = form.message.value.trim();
+            const agree   = form.agree.checked;
+
+            if (!name || !phone) {
+                showStatus('Заполните имя и телефон', '#f1c40f');
+                return;
+            }
+            if (!agree) {
+                showStatus('Подтвердите согласие на обработку данных', '#f1c40f');
+                return;
+            }
+
+            // Формируем сообщение
+            const now = new Date().toLocaleString('ru-RU', { timeZone: 'Europe/Moscow' });
+            const text =
+                `🏠 *Новая заявка с сайта*\n\n` +
+                `👤 *Имя:* ${escapeMd(name)}\n` +
+                `📞 *Телефон:* ${escapeMd(phone)}\n` +
+                `💬 *Комментарий:* ${message ? escapeMd(message) : '—'}\n\n` +
+                `🕒 ${now}`;
+
+            // Блокируем кнопку
+            const btn = form.querySelector('.btn-submit');
+            const originalText = btn.textContent;
+            btn.disabled = true;
+            btn.textContent = 'Отправляем...';
+            showStatus('', '');
+
+            try {
+                const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: TG_CHAT_ID,
+                        text: text,
+                        parse_mode: 'Markdown'
+                    })
+                });
+
+                if (!res.ok) {
+                    const errData = await res.json().catch(() => ({}));
+                    throw new Error(errData.description || 'Ошибка Telegram API');
+                }
+
+                showStatus('✅ Заявка отправлена! Мы свяжемся с вами в ближайшее время.', '#4ade80');
+                form.reset();
+            } catch (err) {
+                console.error(err);
+                showStatus('❌ Не удалось отправить. Напишите нам в Telegram или позвоните.', '#ef4444');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = originalText;
+            }
+        });
+
+        function showStatus(text, color) {
+            status.textContent = text;
+            status.style.color = color;
+            status.style.display = text ? 'block' : 'none';
+            if (text) {
+                clearTimeout(showStatus._t);
+                showStatus._t = setTimeout(() => {
+                    status.style.display = 'none';
+                }, 6000);
+            }
+        }
+
+        // Экранирование спецсимволов Markdown
+        function escapeMd(str) {
+            return String(str).replace(/[_*`\[\]()~>#+\-=|{}.!]/g, '\\$&');
+        }
     </script>
 </body>
 </html>
